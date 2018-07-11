@@ -12,9 +12,9 @@ gulp.task('watch', function() {
         }
     });
 
-    gulp.watch('app/*.html', function() {
+    gulp.watch(['app/*.html', 'app/*.css'], function() {
 
-        console.log('hello');
+        browserSync.reload();
 
     });
 
